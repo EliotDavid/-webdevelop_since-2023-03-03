@@ -26,8 +26,8 @@ public class ResponseDto<D> { // 데이터에 관한것이기 때문에 제네�
 
     //# 실패시에 대한 인스턴스를 생성해주는 static 생성자
 
-    public static <D> ResponseDto<D> setFail(String message, D data){
-        return ResponseDto.set(false, message, data);
+    public static <D> ResponseDto<D> setFail(String message){
+        return ResponseDto.set(false, message, null);
     }
 
 

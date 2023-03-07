@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor 
 // @AllArgsConstructor : 여기서는 이거 안쓴다고 함 왜 안 쓰는거지?
-public class postHumanResourceRequestDto {
+public class PostHumanResourceRequestDto {
 
     // 사번빼고 전부다 복사해왔는데 사번은 왜 빼고 복사해온거지?
     
@@ -69,8 +69,6 @@ public class postHumanResourceRequestDto {
     private String resignationDate;
     
     //? 부서
-    @NotBlank
-    @Length(min=0, max=5)
     private String department;
 
     //? 연봉

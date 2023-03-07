@@ -1,4 +1,4 @@
-package com.koreait.board.dto.request.humanResource;
+package com.koreait.board.dto.response.humanResource;
 
 import com.koreait.board.entity.EmployeeEntity;
 
@@ -9,9 +9,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class PostHumanResourceResponseDto {
-    
-    
+public class GetHumanResourceResponseDto { // 반환형 DtO
     private int employeeNumber;
     
     private String position;
@@ -73,7 +71,7 @@ public class PostHumanResourceResponseDto {
 
 
 
-    public PostHumanResourceResponseDto(EmployeeEntity employeeEntity){
+    public GetHumanResourceResponseDto(EmployeeEntity employeeEntity){
         this.employeeNumber = employeeEntity.getEmployeeNumber();
         this.position = employeeEntity.getPosition();
         this.name = employeeEntity.getName();
